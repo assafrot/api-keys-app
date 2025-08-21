@@ -52,6 +52,18 @@ export default function Sidebar({ isCollapsed, onToggle }: SidebarProps) {
           {!isCollapsed && "API Keys"}
         </div>
         
+        <Link href="/playground">
+          <div 
+            className={`flex items-center px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg cursor-pointer ${isCollapsed ? 'justify-center' : ''}`}
+            title={isCollapsed ? "API Playground" : ""}
+          >
+            <svg className={`w-5 h-5 ${isCollapsed ? '' : 'mr-3'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            {!isCollapsed && "API Playground"}
+          </div>
+        </Link>
+        
         <div 
           className={`flex items-center px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg cursor-pointer ${isCollapsed ? 'justify-center' : ''}`}
           title={isCollapsed ? "Analytics" : ""}
