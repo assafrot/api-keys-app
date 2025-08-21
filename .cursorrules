@@ -1,0 +1,39 @@
+# Cursor AI Rules for API Keys App
+
+## Git & Version Control
+- **NEVER** automatically commit or push changes to git without explicit user request
+- Always ask user for permission before running `git add`, `git commit`, or `git push`
+- When user requests git operations, provide clear commit messages describing the changes
+- Only stage and commit files that are directly related to the requested changes
+
+## Development Guidelines
+- Maintain the modular component structure established in the codebase
+- Use existing TypeScript interfaces and follow established patterns
+- Reuse existing components (Toast, Sidebar, etc.) when possible
+- Follow the established file organization:
+  - Components in `/app/dashboard/components/`
+  - Hooks in `/app/dashboard/hooks/`
+  - API routes in `/app/api/`
+  - Pages as `/app/[route]/page.tsx`
+
+## Code Quality
+- Always run linting checks after making changes
+- Ensure TypeScript compilation succeeds
+- Test functionality locally before suggesting deployment
+- Use the existing Tailwind CSS classes and design system
+
+## Communication
+- Provide clear explanations of changes made
+- Use todo lists to track progress on multi-step tasks
+- Ask for clarification when requirements are ambiguous
+- Inform user about any potential breaking changes
+
+## File Management
+- Prefer editing existing files over creating new ones unless specifically requested
+- Don't create documentation files unless explicitly asked
+- Clean up any temporary files created during development
+
+## Personal Account Configuration
+- This project is configured for personal GitHub account (assafrot@gmail.com)
+- Local git config is set for personal account only
+- Remote origin: https://github.com/assafrot/api-keys-app.git
